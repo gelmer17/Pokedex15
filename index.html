@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="pokemon">
+	<head>
+		<!--jquery.js-->
+		<script src="lib/jquery.js"></script>
+		<!--bootstrap.css-->
+		<link rel="stylesheet" href="lib/boo/css/bootstrap.css">
+		<link rel="icon" href="https://vignette.wikia.nocookie.net/the-pokemon-sun-and-moon/images/4/4c/Pokeball.png/revision/latest?cb=20161123053945">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Poke15</title>
+	</head>
+	<body ng-controller="pokedex">
+		<div class="container text-center">
+			<div class="row">	
+				<div class="col-md-3 cuadro" ng-repeat="poke in pokedexB">
+					<img src="{{poke.data.sprites.front_default}}">
+					<p>{{poke.data.name}}</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--angular.js-->
+		<script src="lib/angular.js"></script>
+		<!--bootstrap.js-->
+		<script src="lib/boo/js/bootstrap.js"></script>
+		<!--script local-->
+		<script src="js/script.js"></script>
+	</body>
+</html>
